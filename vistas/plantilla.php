@@ -8,7 +8,7 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>1838910 - GEORGE</title>
+      <title>Sistema POS</title>
 
       <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -140,14 +140,15 @@
                 $_GET["ruta"] ==  "crearVentas"        ||
                 $_GET["ruta"] ==  "editarVentas"	     ||
                 $_GET["ruta"] ==  "reporteVentas"      ||                
-            	  $_GET["ruta"] ==  "salir"){
+            	  $_GET["ruta"] ==  "salir")
+            {
                   
                   include "modulos/".$_GET["ruta"].".php";
 
-                }else{
+            }else{
 
-                  include "modulos/404.php";
-                }
+              include "modulos/404.php";
+            }
 
           }else{
 
